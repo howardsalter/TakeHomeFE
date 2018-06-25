@@ -1,0 +1,117 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+h1, h2, h3, h4, span, p, div {
+  font-family: 'VT323', monospace;
+}
+
+h1, h2, h3 {
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+p {
+  font-size: 20px
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.terminal-text {
+  font-size: 1.5rem;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  /*border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 0; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  padding-bottom: 10px;
+  animation: 
+    typing 5.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+@media only screen and (max-width: 600px) {
+  .terminal-text {
+    font-size: 1rem;
+  }
+  
+  .defcon-container {
+    padding-bottom: 30px;
+  }
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+.defcon-container {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.defcon-title, .defcon-number {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.defcon-number, .defcon-number-5 {
+  color: #1fa418;
+}
+
+.defcon-number-4, .defcon-number-3, .defcon-number-2 {
+  color: #c1c10c;
+}
+
+.defcon-number-1 {
+  color: red;
+}
+
+.answer-option {
+  margin-right: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+.terminal-input {
+  background-color: black;
+  color: white;
+}
