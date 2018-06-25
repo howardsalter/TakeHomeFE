@@ -36,7 +36,7 @@ class Spa extends React.Component {
       if (data[1] == this.state.questions[this.state.currentQuestion]["correct"]){
         stateObject.correct = this.state.correct + 1;
       } 
-  }
+    }
 
     stateObject.currentQuestion = this.state.currentQuestion + 1;
     if (stateObject.currentQuestion == this.state.questions.length) {
@@ -68,6 +68,7 @@ class Spa extends React.Component {
   };
 
   render() {
+    console.log(this.state);
     return (
       <Container fluid>
         <Row>
@@ -99,7 +100,7 @@ class Spa extends React.Component {
                 </div>
               ) : (
                 <div>
-                  <h2>{this.state.endMessage}</h2>
+                  <h2 className="terminal-text">{this.state.endMessage}</h2>
                   <p>{this.state.correct} out of {this.state.questions.length} Correct!</p>
                 </div>
               )}
