@@ -26,9 +26,7 @@ class Spa extends React.Component {
 
   handleState(e, data) {
     e.preventDefault();
-    let stateObject = {};
-
-    stateObject.correct = this.state.correct;
+    let stateObject = this.state;
 
     if (data[0] == 't'){
       if (data[1].toLowerCase().trim() == this.state.questions[this.state.currentQuestion]["correct"].toLowerCase()){
