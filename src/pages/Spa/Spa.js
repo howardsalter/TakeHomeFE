@@ -76,7 +76,7 @@ class Spa extends React.Component {
             <Terminal>
               <h1>V.O.P.R.</h1>
               <p>Variable Operation Plan Response</p>
-              <div className="terminal-text">Would you like to play a game?</div>
+              <div className="terminal-text">Shall we play a game?</div>
             </Terminal>
           </Col>
           <Col size="md-6">
